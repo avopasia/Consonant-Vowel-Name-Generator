@@ -20,9 +20,13 @@ const submit = document.querySelector("#submit").addEventListener("click", (char
             }
         });
         wordString = wordArray.join("");
+        const link = document.createElement("a");
+        link.textContent = wordString;
+        link.href = `https://instantdomainsearch.com/?q=${wordString}`;
+        link.setAttribute('target', '_blank');
         const div = document.createElement("div");
         div.className = "grid-item";
-        div.textContent = wordString;
+        div.appendChild(link);
         grid.appendChild(div);
         wordArray = [];
     };

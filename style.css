@@ -61,6 +61,15 @@ div {
     width: 150px;
 }
 
+a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(0, 102, 255);
+}
+
 @media only screen and (max-width: 570px) {
     #grid-container {
         padding: 20px 0px;
