@@ -9,8 +9,6 @@ const submit = document.querySelector("#submit").addEventListener("click", (char
     const grid = document.querySelector("#grid-container");
     grid.textContent = "";
     for (let i = 0; i < 40; i++) {
-        wordArray.push("a");
-        wordArray.push("d");
         chars.forEach(char => {
             if (char == "c" || char == "C") {
                 wordArray.push(consonants[Math.floor(Math.random() * consonants.length)]);
